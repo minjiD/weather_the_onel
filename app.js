@@ -73,26 +73,26 @@ function fetchUrl(url) {
 
 function resData(data) {
     const bg = document.querySelector("#wrap");
-    bg.style.backgroundImage = "url('../img/cloudy.jpg')";
+
     //background image
     if(data.weather[0].main === "Clouds") {
         // console.log("Clouds");
-        bg.style.backgroundImage = "url('../img/cloudy.jpg')";
+        bg.style.backgroundImage = "url('./img/cloudy.jpg')";
     }else if(data.weather[0].main === "Rains") {
         // console.log("Rains");
-        bg.style.backgroundImage = "url('../img/rain.jpg')";
+        bg.style.backgroundImage = "url('./img/rain.jpg')";
     }else if(data.weather[0].main === "Clear") {
         // console.log("Clear");
-        bg.style.backgroundImage = "url('../img/sunny.jpg')";
+        bg.style.backgroundImage = "url('./img/sunny.jpg')";
     }else if(data.weather[0].main === "Haze") {
         // console.log("Haze");
-        bg.style.backgroundImage = "url('../img/haze.jpg')";
+        bg.style.backgroundImage = "url('./img/haze.jpg')";
     }else if(data.weather[0].main === "Snow") {
         // console.log("Snow");
-        bg.style.backgroundImage = "url('../img/snow.jpg')";
+        bg.style.backgroundImage = "url('./img/snow.jpg')";
     }else{
         // console.log("else");
-        bg.style.backgroundImage = "url('../img/sunny.jpg')";
+        bg.style.backgroundImage = "url('./img/sunny.jpg')";
     }
 
     //add elements to section
