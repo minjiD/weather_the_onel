@@ -1,0 +1,83 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 위치 */
+#wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#favicon {
+    position: fixed;
+    left: 30px;
+    top: 40px;
+}
+
+#favicon, #favicon-img {
+    z-index: 9999999;
+}
+
+#logo {
+    position: fixed;
+    top: 50px;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: #333 1px 0 10px;
+}
+
+/* 메뉴바 */
+.menu {
+    border: 1px solid #333;
+    background: rgba(5, 5, 5, 65%);
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.3);
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.menu > li {
+    text-align: right;
+    font-size: 35px;
+    padding: 10px;
+    position: absolute;
+}
+
+#menu_t {
+    left: 30px;
+    bottom: 20px;
+}
+
+#menu_g {
+    left: 45px;
+    bottom: 80px;
+}
+
+.menu > li > div > ul > li {
+    display: none;
+    margin: 15px 0;
+}
+
+.menu > li > a, .menu > li > div > ul > li > a {
+    color: white;
+    text-shadow: black 5px 5px 5px;
+}
