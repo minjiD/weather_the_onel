@@ -73,7 +73,7 @@ function fetchUrl(url) {
 
 function resData(data) {
     const bg = document.querySelector("#wrap");
-    
+    bg.style.backgroundImage = "url('../img/cloudy.jpg')";
     //background image
     if(data.weather[0].main === "Clouds") {
         // console.log("Clouds");
